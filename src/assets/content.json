@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "zh": {
+      "title": "Spatium",
+      "subtitle": "柏林作家协会合作项目<br>插画和书籍装帧设计 2020",
+      "desc": "Spatium 是一本和德国著名作家Kathrin Schmidt合作的插画诗集。诗集中精选了10首短诗，配以细腻的铅笔插画。最后再以错页的方式逐页打印，每一张合页打开都是一副独立的景象。 而书本闭合时是静谧。<br><br>我们为书的再印选择了孔板印刷的方式，将铅笔插画和手写还原到它最近,也是最远的样子。每一张合页都是你，站在镜前的样子。交叠着摊开，重塑诗歌的体积。"
+    },
+    "en": {
+      "title": "Spatium",
+      "subtitle": "Cooperation with Association Of  German Writers Berlin<br>Illustration and book development 2020",
+      "desc": "Spatium is an art book made in collaboration with renowned German writer, Kathrin Schmidt. 10 short poems were combined with finely drawn pencil illustrations. This limited edition book was printed with a Riso printer so that the subtle texture of the pencil drawings could be accurately reproduced.<br><br>The book’s creative binding separates each poem from its illustration, creating a unique and engaging reading experience. It can be read in countless ways, reflecting the whim of the individual reader. The book can be opened completely into a tactile sculpture of poetry and illustration."
+    },
+    "images": 7
+  },
+  {
+    "id": 2,
+    "zh": {
+      "title": "Bubble Bauch",
+      "subtitle": "Bubble Bauch 柏林泡泡肚奶茶首席店<br>视觉形象设计 2019",
+      "desc": "泡泡肚是柏林为数不多的优质奶茶店之一，成立于2019年。考虑到年轻活泼受众群体，工作室为他们量身打造了轻松可爱的Logo，这个形象也代表着Q弹的珍珠。考虑到泡泡肚会在不同的材质上印刷Logo，线条就必须简洁醒目。正如奶茶的配方和味道，简单而沁心。"
+    },
+    "en": {
+      "title": "Bubble Bauch",
+      "subtitle": "Bubble Bauch Tea Art Store<br>Branding 2019",
+      "desc": "Bubble Bauch is a popular bubble tea shop in Berlin. We illustrated fun and minimal logo representing tapioca bubbles to appeal to the shop’s younger clientele. As the logo was printed on various surfaces, we chose a clean silhouette to keep the design simple and refreshing, just like the bubble tea itself."
+    },
+    "images": 9
+  },
+  {
+    "id": 3,
+    "zh": {
+      "title": "淘气图鉴",
+      "subtitle": "插画和排版设计 2020",
+      "desc": "每个人都有童年，每个人在童年都有过一些成人难以理解的行为，可惜的是这些有趣的部分常常被规避在图像世界之外，在这个插画项目中, 从周围人那里收集来的这些童年旧被用插画的方式再现出来，希望能填补这些空缺的图像记忆。"
+    },
+    "en": {
+      "title": "Illustration and layout 2020",
+      "subtitle": "",
+      "desc": "We were all kids once and often did things that adults didn’t fully understand. Unfortunately, these interesting childhood habits are not always brought visually with us into adulthood. In this illustration project, weird childhood stories were collected from all kinds of people and made corresponding illustrations in an attempt to bring back to life these strange and joyful childhood experiences."
+    },
+    "images": 7
+  },
+  {
+    "id": 4,
+    "zh": {
+      "title": "七号项目",
+      "subtitle": "Tao and Jin<br>项目手册 海报 2019",
+      "desc": "Tao and Jin 是一个位于柏林和上海的产品设计工作室。我们为他们的家具设计项目Project NO.7，即“七号项目”设计了项目手册和展览海报。<br><br>“七号项目”是一个利用特殊金属弯折工艺，制造出简约当代的家具组合的项目。为了体现家具本身一气呵成的工艺特点，我们选择了毫无杂音的平面设计语言，旨在于和家具精妙的弧线形成强烈对比。是什么让这个项目与众不同，在手册封面就被给出了答案。"
+    },
+    "en": {
+      "title": "Project NO.7",
+      "subtitle": "Tao and Jin<br>Catalog and posters 2019",
+      "desc": "Tao and Jin is a Berlin/Shanghai-based product design studio. For their Project NO.7, we designed a series of catalog and exhibition posters.<br><br>This project featured a special technique in bending metal to create a collection of simple and contemporary furniture. To reflect the characteristics of the furniture itself, we chose a clean and minimal graphic design language, designed to form a strong contrast to the delicate arcs of the furniture."
+    },
+    "images": 9
+  },
+  {
+    "id": 5,
+    "zh": {
+      "title": "A Cook Book",
+      "subtitle": "Illustration and layout 2018",
+      "desc": "A cool combination of food and illustration. The project will invite you to create a dish with both instruction and intuition."
+    },
+    "en": {
+      "title": "插画和排版设计 2018",
+      "subtitle": "",
+      "desc": "吃和插画的结合，教你如何印象地做一道美食。"
+    },
+    "images": 5
+  },
+  {
+    "id": 6,
+    "zh": {
+      "title": "老王的故事",
+      "subtitle": "插画和书籍设计",
+      "desc": "这是一个简单却精彩的东北老王的故事…… 讲述了从东北来德国求学的老王，在柏林的第一个冬天里的传奇经历。 书中尝试用片段化的插画图像拼出整个事件的前因后果。<br><br>也许并没有因果，而是生命的躁动。毕竟老王还活着故事会继续下去。"
+    },
+    "en": {
+      "title": "Illustration and book",
+      "subtitle": "",
+      "desc": "This book describes a simple but fascinating story about Mr. Wang, from North-Eastern China. Mr. Wang came to Germany to study, and the story follows his experience of his first winter in Berlin. Fragmented illustrations were used to put this adventure together."
+    },
+    "images": 8
+  },
+  {
+    "id": 7,
+    "zh": {
+      "title": "Vanko的纹身贴",
+      "subtitle": "插画 2018",
+      "desc": "插画师真情流露的小图像集合。"
+    },
+    "en": {
+      "title": "Vanko’s Temporal Tattoo",
+      "subtitle": "Illustration 2018",
+      "desc": "A heartful collection of images from an illustrator."
+    },
+    "images": 4
+  },
+  {
+    "id": 8,
+    "zh": {
+      "title": "燃烧的衣料",
+      "subtitle": "德国联邦司法部特别展览<br>海报插画设计 2018",
+      "desc": "·燃烧的衣料·是为了介绍19世纪柏林Hausvoigtei广场犹太成衣工厂区的历史举办的特别展览。1836年，在Hausvoigtei广场上成立了柏林第一家成衣企业。德国第三帝国时期这个地区的所有工厂因为种族原因被一扫而清。而广场正是今日的德国联邦司法部的所在地。为了重述柏林成衣业的兴衰，这次特别的展览举办在了司法部建筑内。<br><br>卡片的设计中大量运用了像素的插画元素，颜色明朗且复古。而在正式的海报中则使用了比较可读的色块插画语言，确保你可以走入这幢彩色大楼…"
+    },
+    "en": {
+      "title": "Burning Fabric",
+      "subtitle": "The Federal Ministry of Justice and Consumer Protection, Germany<br>Illustrated poster ft. Molly Dyson  2018",
+      "desc": "Burning Fabric was an exhibition held to commemorate the history of the Jewish garment industry at Hausvogteiplatz in Berlin. A thriving industry since 1836, the garment manufacturers were wiped out during the Second World War. The exhibition was held in the building of the German Federal Ministry of Justice, now in the same location as this historic industry.<br><br>Our illustrations were used for the exhibition publication and press material. We used bright, retro colors for the cards, paired with a colorful block illustration for the posters.<br>"
+    },
+    "images": 3
+  }
+]

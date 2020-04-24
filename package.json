@@ -5,19 +5,37 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.1.0",
     "core-js": "^3.6.4",
-    "vue": "^2.6.11"
+    "sass-resources-loader": "^2.0.3",
+    "style-loader": "^1.1.4",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.0.0",
+    "vue-router": "^3.1.6"
   },
   "devDependencies": {
+    "@babel/polyfill": "^7.7.0",
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "^4.3.1",
     "@vue/cli-service": "~4.3.0",
     "babel-eslint": "^10.1.0",
+    "bootstrap": "^4.3.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "mutationobserver-shim": "^0.3.3",
+    "node-sass": "^4.14.0",
+    "popper.js": "^1.16.0",
+    "portal-vue": "^2.1.6",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-bootstrap-vue": "^0.6.0",
+    "vue-cli-plugin-i18n": "^0.6.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -26,13 +44,34 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/strongly-recommended",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/attribute-hyphenation": "error",
+      "vue/html-closing-bracket-newline": "error",
+      "vue/html-closing-bracket-spacing": "error",
+      "vue/html-end-tags": "error",
+      "vue/html-indent": "error",
+      "vue/html-quotes": "error",
+      "vue/html-self-closing": "error",
+      "vue/max-attributes-per-line": "error",
+      "vue/multiline-html-element-content-newline": "error",
+      "vue/mustache-interpolation-spacing": "error",
+      "vue/name-property-casing": "error",
+      "vue/no-multi-spaces": "error",
+      "vue/no-spaces-around-equal-signs-in-attribute": "error",
+      "vue/no-template-shadow": "error",
+      "vue/prop-name-casing": "error",
+      "vue/require-default-prop": "error",
+      "vue/require-prop-types": "error",
+      "vue/singleline-html-element-content-newline": "error",
+      "vue/v-bind-style": "error",
+      "vue/v-on-style": "error"
+    }
   },
   "browserslist": [
     "> 1%",
