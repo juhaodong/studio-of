@@ -5,15 +5,26 @@
 </template>
 
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  p{
+    font-family: 'Noto Sans SC', sans-serif;
+  }
   #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans SC', 'Encode Sans', "Helvetica Neue", 'Hei',sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
   }
+
 </style>
 <style lang="scss">
+  @media only screen and(max-width: 600px) {
+    .mobileWhite {
+      background: white;
+    }
+  }
   $gridSize:27px;
 </style>
 <script>

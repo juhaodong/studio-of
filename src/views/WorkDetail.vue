@@ -9,6 +9,19 @@
     <template v-slot:desc>
       <p v-html="detail.desc" />
     </template>
+    <template v-slot:imgs>
+      <div
+        :key="'imageBlock'+t"
+        v-for="t in detail.images"
+        class="img-container"
+      >
+        <img
+          style="width: 100%;height: auto"
+          :src="'/images/'+detail.id+'/'+t+'.png'"
+          alt="w"
+        >
+      </div>
+    </template>
   </detail-text-block>
 </template>
 
@@ -21,19 +34,42 @@
         components: {DetailTextBlock},
         props: {
             id: {
-                type: String,
-                default: '0'
+                type: Number,
+                default: 0
             }
         },
         computed: {
             detail: function () {
                 console.log(details.find(item => item.id === parseInt(this.id)), this.id)
-                return details.find(item => item.id === parseInt(this.id))[this.$i18n.locale.toLowerCase()]
+                const item = details.find(item => item.id === parseInt(this.id))
+                return {
+                    id: item.id,
+                    ...item[this.$i18n.locale.toLowerCase()],
+                    images: item.images
+
+                }
             }
+        },
+        mounted() {
+            console.log('mount')
+            this.scrollToTop()
+        },
+        methods: {
+            scrollToTop() {
+                window.scrollTo(0, 0);
+            },
         }
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  .img-container {
+    margin-top: 100px;
+    width: 100%;
+  }
+  @media only screen and(max-width: 600px) {
+    .img-container {
+      margin-top: 25px;
+    }
+  }
 </style>

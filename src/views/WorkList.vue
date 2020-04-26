@@ -2,6 +2,7 @@
   <div class="gridContainer">
     <template v-for="i in 8">
       <div
+        :id="'work'+i"
         class="grid"
         :key="i"
         @click="gotoDetail(i)"
@@ -47,7 +48,7 @@
   }
 
   .grid:hover {
-    border: 2px solid blue;
+    border: 2px solid $blueR;
   }
 
   .grid:nth-child(n+4) {
@@ -57,5 +58,14 @@
   .grid:nth-child(3n+1) {
     margin-left: 0;
   }
-
+  @media only screen and(max-width: 600px) {
+    .grid{
+      margin: unset;
+      width: 100%;
+      height: auto;
+    }
+    .grid:nth-child(n+4) {
+      margin-top: 0;
+    }
+  }
 </style>

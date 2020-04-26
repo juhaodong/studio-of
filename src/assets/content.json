@@ -57,14 +57,14 @@
   },
   {
     "id": 5,
-    "zh": {
+    "en": {
       "title": "A Cook Book",
       "subtitle": "Illustration and layout 2018",
       "desc": "A cool combination of food and illustration. The project will invite you to create a dish with both instruction and intuition."
     },
-    "en": {
-      "title": "插画和排版设计 2018",
-      "subtitle": "",
+    "zh": {
+      "title": "一个食谱",
+      "subtitle": "插画和排版设计 2018",
       "desc": "吃和插画的结合，教你如何印象地做一道美食。"
     },
     "images": 5

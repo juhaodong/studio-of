@@ -1,17 +1,20 @@
 <template>
   <div class="grid-background">
     <div class="realSpace">
-      <router-view />
+      <transition name="slide-fade">
+        <router-view />
+      </transition>
     </div>
-    <div class="langSwitch">
-      中文
-    </div>
+    <language-switch class="language-switch" />
   </div>
 </template>
 
 <script>
+    import LanguageSwitch from "@/components/LanguageSwitch";
+
     export default {
-        name: "PageContainer"
+        name: "PageContainer",
+        components: {LanguageSwitch},
     }
 </script>
 
@@ -24,7 +27,7 @@
     overflow-x: scroll;
     position: relative;
     width: calc(100vw - 300px);
-    min-height: 100vh;
+    height: 100vh;
     background-color: #fff;
     background-size: $gridSize $gridSize;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0.1px, transparent 1px),
@@ -32,13 +35,9 @@
 
   }
 
-  .langSwitch {
-    cursor: pointer;
+  .language-switch {
     position: fixed;
-    top: 62.5px;
-    right: 2*$gridSize;
-    font-size: 16px;
-    font-family: SIL-Hei-Med-Jian;
+    top: 65px;
   }
 
   .realSpace {
@@ -48,5 +47,31 @@
     padding: 3*$gridSize 0;
     width: 3*405px + 2*108px;
   }
-
+  .slide-fade-enter-active {
+    transition: all .2s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .2s ease;
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+    /* .slide-fade-leave-active below version 2.1.8 */ {
+    /*transform: translateX(100vw);*/
+    opacity: 0;
+  }
+  @media only screen and(max-width: 600px) {
+    .grid-background {
+      width: 100%;
+      padding: 27px;
+      padding-right: 23px;
+    }
+    .realSpace {
+      margin: unset;
+      margin-top: 81px;
+      padding-top: 0;
+      width: 100%;
+    }
+    .language-switch {
+      display: none;
+    }
+  }
 </style>
