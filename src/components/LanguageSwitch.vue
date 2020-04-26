@@ -21,7 +21,7 @@
 <style scoped lang="scss">
   .langSwitch {
     cursor: pointer;
-    right: 2*$gridSize;
+    right: 35px;
     font-size: 16px;
     font-family: SIL-Hei-Med-Jian;
   }

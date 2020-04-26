@@ -189,7 +189,7 @@
   }
 
   .bottom {
-    font-size: 18px;
+    font-size: 12px;
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.5);
     position: fixed;

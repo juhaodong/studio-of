@@ -50,15 +50,8 @@
                 }
             }
         },
-        mounted() {
-            console.log('mount')
-            this.scrollToTop()
-        },
-        methods: {
-            scrollToTop() {
-                window.scrollTo(0, 0);
-            },
-        }
+
+
     }
 </script>
 
@@ -67,6 +60,7 @@
     margin-top: 100px;
     width: 100%;
   }
+
   @media only screen and(max-width: 600px) {
     .img-container {
       margin-top: 25px;

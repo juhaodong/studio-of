@@ -38,21 +38,19 @@ const routes = [
 const router = new VueRouter({
     mode: 'history',
     routes,
-    // scrollBehavior(to, from, savedPosition) {
-    //     // console.log(from,to)
-    //     // if (from.name === 'detail' && to.name === 'work') {
-    //     //     console.log( '#work' + from.params.id)
-    //     //     return {
-    //     //         selector: '#work' + from.params.id
-    //     //     }
-    //     // }
-    //     if (savedPosition) {
-    //         console.log(savedPosition)
-    //         return savedPosition
-    //     } else {
-    //         return {x: 0, y: 0}
-    //     }
-    // }
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            console.log(savedPosition)
+            return savedPosition
+        } else if (from.name === 'detail' && to.name === 'work') {
+            console.log('#work' + from.params.id)
+            return {
+                selector: '#work' + from.params.id
+            }
+        } else {
+            return {x: 0, y: 0}
+        }
+    }
 })
 
 export default router
