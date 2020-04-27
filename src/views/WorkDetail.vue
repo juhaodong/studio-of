@@ -22,6 +22,22 @@
         >
       </div>
     </template>
+    <div class="lastArrow">
+      <div
+        v-if="prev"
+        class="left"
+        @click="toPrev"
+      >
+        ←
+      </div>
+      <div
+        v-if="next"
+        class="right"
+        @click="toNext"
+      >
+        →
+      </div>
+    </div>
   </detail-text-block>
 </template>
 
@@ -48,14 +64,53 @@
                     images: item.images
 
                 }
+            },
+            next: function () {
+                return details.find(item => item.id === parseInt(this.id) + 1)
+            },
+            prev: function () {
+                return details.find(item => item.id === parseInt(this.id) - 1)
             }
         },
+        methods: {
+            toNext() {
+                if (details.find(item => item.id === parseInt(this.id) + 1)) {
+                    this.$router
+                        .push('/detail/' + (parseInt(this.id) + 1))
+                } else {
+                    return;
+                }
+            },
+            toPrev() {
+                if (details.find(item => item.id === parseInt(this.id) - 1)) {
+                    this.$router
+                        .push('/detail/' + (parseInt(this.id) - 1))
+                } else {
+                    return;
+                }
+            }
+        }
 
 
     }
 </script>
 
 <style scoped lang="scss">
+  .lastArrow {
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    color: #747474;
+    line-height: 48px;
+    font-family: "Helvetica Neue", sans-serif;
+  }
+
+  .left {
+    margin-right: 90px;
+  }
+
   .img-container {
     margin-top: 100px;
     width: 100%;

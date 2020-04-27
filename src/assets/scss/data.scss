@@ -2,3 +2,8 @@ $gridSize: 27px;
 $sideBarWidth: 300px;
 
 $blueR: #0090ff;
+
+@font-face {
+  font-family: Codec;
+  src: url("~@/assets/fonts/codec/codec.otf") format("opentype");
+}

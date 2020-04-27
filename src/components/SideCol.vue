@@ -5,10 +5,12 @@
         class="topIcon"
         :class="{about:$route.path==='/about'}"
       >
-        <img
-          style="width:100%;height: auto"
-          src="@/assets/studioLogo.png"
-        >
+        <router-link to="/">
+          <img
+            style="width:100%;height: auto"
+            src="@/assets/studioLogo.png"
+          >
+        </router-link>
       </div>
       <div
         :class="{about:$route.path==='/about'}"
@@ -132,6 +134,7 @@
   }
 
   .sideNav {
+    position: fixed;
     z-index: 100;
     width: $sideBarWidth;
     height: 100vh;

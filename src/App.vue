@@ -8,11 +8,13 @@
   html {
     scroll-behavior: smooth;
   }
-  p{
-    font-family: 'Noto Sans SC', sans-serif;
+
+  p {
+    font-family: Codec, 'Noto Sans SC', sans-serif;
   }
+
   #app {
-    font-family: 'Noto Sans SC', 'Encode Sans', "Helvetica Neue", 'Hei',sans-serif;
+    font-family: Codec, 'Noto Sans SC', 'Encode Sans', "Helvetica Neue", 'Hei', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -25,7 +27,8 @@
       background: white;
     }
   }
-  $gridSize:27px;
+
+  $gridSize: 27px;
 </style>
 <script>
     import Home from "@/views/Home";

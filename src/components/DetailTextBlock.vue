@@ -17,6 +17,7 @@
     <div class="imgs">
       <slot name="imgs" />
     </div>
+    <slot />
   </div>
 </template>
 

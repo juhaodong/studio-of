@@ -42,7 +42,7 @@
                     path: '/data.json'
                 }
             )
-            setTimeout(this.stopAnimation, 3800)
+            setTimeout(this.stopAnimation, 7000)
 
         },
         methods: {
@@ -95,6 +95,5 @@
     height: 100vh;
   }
 </style>
-todo: title英文标题字体,中文字体 字体问题
-箭头
+
 

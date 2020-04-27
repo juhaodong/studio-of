@@ -27,6 +27,8 @@
   .grid-background {
     overflow-x: scroll;
     position: relative;
+    margin-left: $sideBarWidth;
+
   }
   .grid-background-real{
     position: fixed;
@@ -57,6 +59,7 @@
       width: 100%;
       overflow-x: hidden;
       padding: 0;
+      margin-left: unset;
     }
     .grid-background-real{
 
