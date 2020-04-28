@@ -60,12 +60,13 @@
   }
   @media only screen and(max-width: 600px) {
     .grid{
-      margin: unset;
+      margin:unset;
+      margin-top: 54px;
       width: 100%;
       height: auto;
     }
     .grid:nth-child(n+4) {
-      margin-top: 0;
+      margin-top: 54px;
     }
   }
 </style>

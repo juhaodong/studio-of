@@ -1,22 +1,21 @@
 <template>
   <div class="mobileWhite">
-    <page-title>
-      CONTACT
-    </page-title>
-    <text-block style="font-size: 14px;margin-bottom: 175px">
-      <p>Email</p><br>
-      <p>
-        Mr. TAO,Sui<br>
-        JacobsohnStr.54C<br>
-        13086 Berlin
-      </p>
-      <p>
-        +4917672457820<br>
-        +49680300477(For Consulting)
-      </p>
-    </text-block>
-
-    <text-block>
+    <div class="hideOnFull">
+      <page-title>
+        CONTACT
+      </page-title>
+      <text-block style="font-size: 14px;margin-bottom: 175px">
+        <p>
+          Instagram: @designstudio_of<br>
+          Behance: @Studio Of
+        </p>
+        <p style="margin-top: 51px">
+          Email<br>
+          info@studioof.net
+        </p>
+      </text-block>
+    </div>
+    <text-block class="full-margin">
       <p><strong><big>Datenschutzerklärung</big></strong></p>
       <p><strong>Allgemeiner Hinweis und Pflichtinformationen</strong></p>
       <p><strong>Benennung der verantwortlichen Stelle</strong></p>
@@ -180,6 +179,21 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+  .hideOnFull {
+    display: none;
+  }
 
+  .full-margin {
+    margin-top: 267px;
+  }
+
+  @media only screen and(max-width: 600px) {
+    .hideOnFull {
+      display: block;
+    }
+    .full-margin {
+      margin-top: unset;
+    }
+  }
 </style>

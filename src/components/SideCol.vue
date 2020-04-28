@@ -21,7 +21,7 @@
             to="/about"
             class="nav-item"
           >
-            ABOUT
+            {{ $t('ABOUT') }}
           </router-link>
         </div>
         <div style="margin-top: 22px">
@@ -29,18 +29,21 @@
             to="/"
             class="nav-item"
           >
-            WORK
+            {{ $t('WORK') }}
           </router-link>
         </div>
       </div>
       <div class="bottom">
         <div class="bigger">
-          Email: studio@info.com
+          Email: info@studioof.net
         </div>
         <div class="bigger">
-          Instagram @studioof
+          Instagram: @designstudio_of
         </div>
-        <div class="middle">
+        <div
+          class="middle"
+          style="margin-top: 5px"
+        >
           公众号:Studio Of
         </div>
         <router-link
@@ -84,7 +87,7 @@
               to="/"
               class="nav-item"
             >
-              WORK
+              {{ $t('WORK') }}
             </router-link>
           </div>
           <div style="margin-top:120px">
@@ -92,7 +95,7 @@
               to="/about"
               class="nav-item"
             >
-              ABOUT
+              {{ $t('ABOUT') }}
             </router-link>
           </div>
           <div style="margin-top:120px">
@@ -100,7 +103,7 @@
               to="/privacy"
               class="nav-item"
             >
-              CONTACT
+              {{ $t('CONTACT') }}
             </router-link>
           </div>
         </div>
@@ -124,6 +127,10 @@
 </script>
 
 <style scoped lang="scss">
+  .bigger {
+    letter-spacing: .6px;
+  }
+
   .fade-enter-active, .fade-leave-active {
     transition: opacity .2s;
   }

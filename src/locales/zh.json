@@ -1,4 +1,7 @@
 {
   "message": "hello i18n !!",
-  "中文": "EN"
+  "中文": "EN",
+  "ABOUT": "关于",
+  "WORK": "案例",
+  "CONTACT": "联系"
 }
