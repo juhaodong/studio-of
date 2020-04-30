@@ -1,15 +1,15 @@
 <template>
-  <div class="gridContainer">
+  <div class="gridContainer row">
     <template v-for="i in 8">
       <div
         :id="'work'+i"
-        class="grid"
+        class="grid col-lg-4 col-md-6 col-sm-12"
         :key="i"
         @click="gotoDetail(i)"
       >
         <img
           style="width: 100%;height: auto"
-          :src="'/icons/'+i+'.png'"
+          :src="'/images/'+i+'.png'"
         >
       </div>
     </template>
@@ -41,32 +41,18 @@
 
   .grid {
     cursor: pointer;
-    margin-left: 108px;
-    width: 405px;
-    height: 405px;
-    /*background: white;*/
+    padding: 30px;
   }
 
   .grid:hover {
     border: 2px solid $blueR;
   }
-
-  .grid:nth-child(n+4) {
-    margin-top: 108px;
-  }
-
-  .grid:nth-child(3n+1) {
-    margin-left: 0;
-  }
   @media only screen and(max-width: 600px) {
     .grid{
-      margin:unset;
-      margin-top: 54px;
       width: 100%;
-      height: auto;
-    }
-    .grid:nth-child(n+4) {
+      padding: 0;
       margin-top: 54px;
+      height: auto;
     }
   }
 </style>

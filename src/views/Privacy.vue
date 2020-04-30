@@ -6,12 +6,12 @@
       </page-title>
       <text-block style="font-size: 14px;margin-bottom: 175px">
         <p>
-          Instagram: @designstudio_of<br>
-          Behance: @Studio Of
+          Instagram: <a href="https://www.instagram.com/designstudio_of/">@designstudio_of</a><br>
+          Behance: <a href="https://www.behance.net/studioof">@Studio Of</a>
         </p>
         <p style="margin-top: 51px">
           Email<br>
-          info@studioof.net
+          <a href="mailto:info@studioof.net">info@studioof.net</a>
         </p>
       </text-block>
     </div>

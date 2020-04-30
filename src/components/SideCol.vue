@@ -35,10 +35,10 @@
       </div>
       <div class="bottom">
         <div class="bigger">
-          Email: info@studioof.net
+          Email: <a href="mailto:info@studioof.net">info@studioof.net</a>
         </div>
         <div class="bigger">
-          Instagram: @designstudio_of
+          Instagram: <a href="https://www.instagram.com/designstudio_of/">@designstudio_of</a>
         </div>
         <div
           class="middle"
@@ -127,6 +127,13 @@
 </script>
 
 <style scoped lang="scss">
+  .bottom {
+    a {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+  }
+
   .bigger {
     letter-spacing: .6px;
   }
@@ -181,6 +188,7 @@
     text-align: left;
     transition: margin-top 0.4s;
   }
+
 
   .nav-item {
     color: #000000;

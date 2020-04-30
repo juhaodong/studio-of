@@ -9,6 +9,13 @@
         class="loading"
       />
     </transition>
+    <transition name="slide-fade">
+      <div
+        v-show="loading"
+        ref="loadingMobile"
+        class="loading hideOnFull"
+      />
+    </transition>
 
     <!--    <div-->
     <!--      class="loading"-->
@@ -31,6 +38,7 @@
         data: function () {
             return {
                 animation: {},
+                animation2: {},
                 loading: true
             }
         },
@@ -43,11 +51,20 @@
                 }
             )
             setTimeout(this.stopAnimation, 7000)
+            this.animation2 = lottie.loadAnimation({
+                    container: this.$refs.loadingMobile,
+                    renderer: 'svg',
+                    autoplay: true,
+                    path: '/data2.json'
+                }
+            )
+            setTimeout(this.stopAnimation, 7000)
 
         },
         methods: {
             stopAnimation: function () {
                 this.animation.destroy()
+                this.animation2.destroy()
                 this.loading = false
             }
         }

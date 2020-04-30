@@ -25,7 +25,6 @@
   }
 
   .grid-background {
-    overflow-x: scroll;
     position: relative;
     margin-left: $sideBarWidth;
 
@@ -51,7 +50,6 @@
     margin-left: 4 * $gridSize;
     margin-right: 3 * $gridSize;
     padding: 3*$gridSize 0;
-    width: 3*405px + 2*108px;
   }
 
   @media only screen and(max-width: 600px) {

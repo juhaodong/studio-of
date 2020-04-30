@@ -42,12 +42,14 @@ const router = new VueRouter({
         if (savedPosition) {
             console.log(savedPosition)
             return savedPosition
-        } else if (from.name === 'detail' && to.name === 'work') {
-            console.log('#work' + from.params.id)
-            return {
-                selector: '#work' + from.params.id
-            }
-        } else {
+        }
+        // else if (from.name === 'detail' && to.name === 'work') {
+        //     console.log('#work' + from.params.id)
+        //     return {
+        //         selector: '#work' + from.params.id
+        //     }
+        // }
+        else {
             return {x: 0, y: 0}
         }
     }
